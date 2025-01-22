@@ -1,0 +1,40 @@
+@import '../../styles/_variables';
+
+.button {
+    border: none;
+    border-radius: 35px;
+    color: white;
+    cursor: pointer;
+    font-family: 'Open Sans', Arial, sans-serif;
+    font-size: clamp(16px, 1.5vw, 19px);
+    font-weight: 600;
+    height: 70px;
+    letter-spacing: -0.5px;
+    line-height: clamp(19px, 2.725vh, 24px);
+    outline: none;
+    padding: 23px 33px;
+    position: relative;
+    text-align: center;
+    width: clamp(130px, 16vw, 310px);
+
+    &.icon,
+    &.default {
+        background-color: $dark-blue;
+        transition: background-color .5s, outline .5s;
+    }
+
+    &.disabled {
+        background-color: $light-grey;
+    }
+
+    &.icon {
+        padding: 11px 19px 11px 65px;
+        text-align: left;
+    }
+
+    span {
+        position: absolute;
+        left: 27px;
+        top: 24px;
+    }
+}

@@ -1,0 +1,10 @@
+
+body {
+  color: white;
+  font-size: 19px;
+  margin: 0;
+}
+
+@media (prefers-color-scheme: light) {
+
+}

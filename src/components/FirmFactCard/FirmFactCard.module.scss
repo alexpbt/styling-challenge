@@ -1,0 +1,49 @@
+@import '../../styles/_variables';
+
+.card {
+    align-content: center;
+    background-color: white;
+    border-color: transparent;
+    box-sizing: border-box;
+    cursor: pointer;
+    display: flex;
+    flex-wrap: wrap;
+    height: clamp(150px, 50vh, 322px);
+    justify-content: center;
+    transition: background-color .5s, border-color .5s;
+    width: clamp(100px, 19vw, 364px);
+
+    &:hover {
+        button:not(:disabled) {
+            background-color: $green;
+            outline: 2px solid white;
+        }
+    }
+}
+
+.default {
+    &:hover {
+        background-color: $green;
+    }
+}
+
+.border {
+    align-content: flex-start;
+    padding-block-start: 50px;
+
+    &:hover {
+        border-color:$green;
+        border-style: solid;
+        border-width: 15px;
+        padding-block-start: 35px;
+    }
+}
+
+.half {
+    grid-row: span 1 / span 1;
+}
+
+.full {
+    grid-row: span 2 / span 2;
+    height: 100%;
+}
