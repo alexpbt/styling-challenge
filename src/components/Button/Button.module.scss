@@ -1,4 +1,4 @@
-@import '../../styles/_variables';
+@import '../../styles/variables';
 
 .button {
     border: none;
@@ -6,7 +6,7 @@
     color: white;
     cursor: pointer;
     font-family: 'Open Sans', Arial, sans-serif;
-    font-size: clamp(16px, 1.5vw, 19px);
+    font-size: clamp(16px, 1vw, 19px);
     font-weight: 600;
     height: 70px;
     letter-spacing: -0.5px;
